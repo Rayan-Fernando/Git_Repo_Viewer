@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Scroll from './components/Scroll';
 import useBookSearch from './useBookSearch';
 // import { Switch } from '@headlessui/react';
-
+// import { Switch } from '@headlessui/react';// import { Switch } from '@headlessui/react';
 
 
 function App() {
@@ -37,14 +37,14 @@ function App() {
       <div className="min-h-screen">
         <div class="flex">
           <form>
-            <span class="text-sm border-2 rounded-l px-4 py-2 bg-gray-300 whitespace-no-wrap">Enter Github Username:</span>
-            <input name="field_name" class=" ml-4 lg:ml-0 border-2 rounded-r px-4 py-2 w-56" type="text"
+            <span class="text-sm border-2 rounded-l px-5 py-3 bg-gray-400 whitespace-no-wrap">Enter Github Username:</span>
+            <input name="field_name" class=" ml-4 lg:ml-0 border-2 rounded-r px-4 py-3 w-56" type="text"
               value={input} onChange={event => setinput(event.target.value)} placeholder="dumidu1998" />
             <button onClick={clickk} className="bg-indigo-600 hover:bg-blue-dark ml-1 text-white font-bold py-3 px-6 rounded">Click to Load</button>
           </form>
         </div>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 px-4 ">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 gap-5 px-5 ">
           {repos.map(repo => (<Card h2={repo.name} img={repo.avatar} url={repo.url} desc={repo.desc} />))}
         </div>
       </div>
